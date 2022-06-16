@@ -21,18 +21,37 @@ namespace IdSrvInMem
             {
                 new ApiScope("scope1"),
                 new ApiScope("scope2"),
+                new ApiScope("NotaFiscal"),
             };
 
         public static IEnumerable<Client> Clients =>
             new Client[]
             {
+                // meu client
+                new Client
+                {
+                    ClientId = "mvc.implicit",
+                    ClientName = "Minha aplicação web MVC",
+                    AllowedGrantTypes = GrantTypes.Implicit, // infica como a aplicação vai acessar este servidor de identidade, qual o fluxo
+                    AllowAccessTokensViaBrowser = true,
+                    RedirectUris = { "http://localhost:7220/signin-oidc" },
+                    PostLogoutRedirectUris = { "http://localhost:7220" },
+                    //ClientSecrets = { new Secret("511536EF-F270-4058-80CA-1C89C192F69A".Sha256()) },
+                    AllowedScopes = { 
+                        "openid",
+                        "profile",
+                        "scope1",
+                        "scope2",
+                        "NotaFiscal",
+                     }
+                },
                 // m2m client credentials flow client
                 new Client
                 {
                     ClientId = "m2m.client",
                     ClientName = "Client Credentials Client",
 
-                    AllowedGrantTypes = GrantTypes.ClientCredentials,
+                    AllowedGrantTypes = GrantTypes.ClientCredentials, // infica como a aplicação vai acessar este servidor de identidade, qual o fluxo
                     ClientSecrets = { new Secret("511536EF-F270-4058-80CA-1C89C192F69A".Sha256()) },
 
                     AllowedScopes = { "scope1" }

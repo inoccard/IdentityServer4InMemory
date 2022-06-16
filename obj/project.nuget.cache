@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "gH36D+JQgFkEwI16PcHBCkQk0Bap8BgR0ael8A5RNx52wdG/EoQUi+iqDFJ4VKhQydpPQZMObLvxP4/YB1YupA==",
+  "dgSpecHash": "l3FPBCgEp87Ox1Bk72v+EOrwzdZCQG6ft91iGVjGJTExRRx+jfPu/DTiY5KIEzACd2yUm6D1jdL36MOl25wbAg==",
   "success": true,
   "projectFilePath": "C:\\inoccard\\code\\IS4V2\\idsrvinmem\\IdSrvInMem.csproj",
   "expectedPackageFiles": [
@@ -80,8 +80,7 @@
     "C:\\Users\\inoce\\.nuget\\packages\\system.text.encodings.web\\4.7.0\\system.text.encodings.web.4.7.0.nupkg.sha512",
     "C:\\Users\\inoce\\.nuget\\packages\\system.threading\\4.3.0\\system.threading.4.3.0.nupkg.sha512",
     "C:\\Users\\inoce\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
-    "C:\\Users\\inoce\\.nuget\\packages\\system.threading.timer\\4.0.1\\system.threading.timer.4.0.1.nupkg.sha512",
-    "C:\\Users\\inoce\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.24\\microsoft.netcore.app.host.win-x64.3.1.24.nupkg.sha512"
+    "C:\\Users\\inoce\\.nuget\\packages\\system.threading.timer\\4.0.1\\system.threading.timer.4.0.1.nupkg.sha512"
   ],
   "logs": []
 }
